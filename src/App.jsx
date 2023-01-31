@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import './App.css';
+import "./App.css";
 
 // Component are used in pages
 
 // Page imports
-import Home from "./pages/home";
-import NotFound from "./pages/404";
+import Home from "./pages/home.jsx";
+import NotFound from "./pages/404.jsx";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 
 const appWrapper = () => {
   return (
-      <App/>
+    <App/>
   )
 }
 
