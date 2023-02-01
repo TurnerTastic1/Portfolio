@@ -8,6 +8,7 @@ function Home() {
       <NavBar />
 
       <p>This is the home page content!</p>
+      <p>I wrote this and it was added to the website via a workflow deploy to azure</p>
     </div>
   )
 }
