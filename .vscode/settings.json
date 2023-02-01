@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eea56def-d237-419d-a93f-46c6db5fee8c/appservices/subscriptions/eea56def-d237-419d-a93f-46c6db5fee8c/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/portfolio-turner",
+    "appService.deploySubpath": "."
+}
