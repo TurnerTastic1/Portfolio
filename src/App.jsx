@@ -23,7 +23,7 @@ function App() {
 
 const appWrapper = () => {
   return (
-    <App/>
+    <App />
   )
 }
 
