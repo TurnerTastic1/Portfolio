@@ -9,7 +9,7 @@ function Home() {
 
       <p>This is the home page content!</p>
       <p>I wrote this and it was added to the website via a workflow deploy to azure</p>
-      <p>This is an azure test</p>
+      <p>All I do is test these days</p>
     </div>
   )
 }
