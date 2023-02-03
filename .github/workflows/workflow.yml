@@ -1,19 +1,19 @@
 
-# File: .github/workflows/workflow.yml
+# # File: .github/workflows/workflow.yml
 
-on: [push]
+# on: [push]
 
-name: AzureLoginSample
+# name: AzureLoginSample
 
-jobs:
+# jobs:
 
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
     
-    - uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_PUBLISH_SETTINGS }}
+#     - uses: azure/login@v1
+#       with:
+#         creds: ${{ secrets.AZURE_PUBLISH_SETTINGS }}
     
-    - run: |
-        az webapp list --query "[?state=='Running']"
+#     - run: |
+#         az webapp list --query "[?state=='Running']"
