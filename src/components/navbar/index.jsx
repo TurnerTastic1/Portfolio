@@ -8,6 +8,7 @@ function Navbar() {
     <nav>
       <div>
         <p>This is the navbar!</p>
+        <p>New changes!</p>
       </div>
     </nav>
   )
