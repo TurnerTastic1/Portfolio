@@ -1,10 +1,16 @@
 import React from "react";
+// get styled components
+
+// Comment for testing linter for a new branch
 
 function Navbar() {
   return (
-    <div>
-      <p>This is the navbar!</p>
-    </div>
+    <nav>
+      <div>
+        <p>This is the navbar!</p>
+        <p>New changes!</p>
+      </div>
+    </nav>
   )
 }
 
