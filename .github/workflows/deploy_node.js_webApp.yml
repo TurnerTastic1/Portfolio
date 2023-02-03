@@ -19,8 +19,8 @@ env:
   NODE_VERSION: '18.x'                # set this to the node version to use
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
     environment: dev
     steps:
@@ -37,15 +37,11 @@ jobs:
         npm install
         npm run build --if-present
         # npm run test --if-present
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    environment: dev
-    steps:
-    - name: Azure login
+    - name: Login via Az module
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+        allow-no-subscriptions: true
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with: 
