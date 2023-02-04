@@ -6,7 +6,7 @@ import GlobalStyle from "./globalStyles";
 import Navbar from "./components/navbar/index.jsx";
 
 // Page imports
-import Home from "./pages/home.js";
+import Home from "./pages/home.jsx";
 import NotFound from "./pages/404.jsx";
 
 function App() {

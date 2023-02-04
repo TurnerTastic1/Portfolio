@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -65,23 +67,48 @@ const Link = styled.a`
   }
 `;
 
+const Emphasis = styled(motion.div)`
+  color: inherit;
+`;
+
 function Navbar() {
   return (
     <NavbarContainer>
       <LeftSection>
         <HomeRedirect>
-          <HomeRLink href="/">TN</HomeRLink>
+          <Emphasis
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <HomeRLink href="/">TN</HomeRLink>
+          </Emphasis>
         </HomeRedirect>
+        
       </LeftSection>
       <RightSection>
         <Text>
-          <Link href="/#about">About</Link>
+          <Emphasis
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Link href="/#about">About</Link>
+          </Emphasis>
         </Text>
         <Text>
-          <Link href="/projects">Projects</Link>
+          <Emphasis
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Link href="/projects">Projects</Link>
+          </Emphasis>
         </Text>
         <Text>
-          <Link href="/socials">Socials</Link>
+          <Emphasis
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.8 }}
+          >
+            <Link href="/socials">Socials</Link>
+          </Emphasis>
         </Text>
       </RightSection>
     </NavbarContainer>

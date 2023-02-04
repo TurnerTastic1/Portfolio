@@ -63,9 +63,13 @@ function Home() {
     <div>
       <Main id="home">
         <motion.div
-          initial={{height:0}}
-          animate={{height: "55vh"}}
-          transition={{ type: "spring", duration:2, delay:1 }}
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+          }}
         >
           <SubBox>
             <Text>
@@ -75,15 +79,6 @@ function Home() {
           </SubBox>
           
         </motion.div>
-        <SubBox>
-          <h1>
-            <AnimatedTitle input="Hello there,"/>
-          </h1>
-          <h1>
-            <AnimatedTitle input="My name is Turner"/>
-          </h1>
-          
-        </SubBox>
         
         
       </Main>
