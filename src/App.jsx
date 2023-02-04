@@ -1,16 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
+import GlobalStyle from "./globalStyles";
 
-// Component are used in pages
+// Components
+import Navbar from "./components/navbar/index.jsx";
 
 // Page imports
-import Home from "./pages/home.jsx";
+import Home from "./pages/home.js";
 import NotFound from "./pages/404.jsx";
 
 function App() {
+  // const paths = ["/", "home", "/#about"];
+  // const is404 = !paths.includes(window.hash);
   return (
     <Router>
+      <GlobalStyle/>
+      {true && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
