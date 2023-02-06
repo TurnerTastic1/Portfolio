@@ -39,7 +39,7 @@ function Navbar() {
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.8 }}
           >
-            <HomeRLink href="/">TN</HomeRLink>
+            <HomeRLink href="/home">TN</HomeRLink>
           </Emphasis>
         </HomeRedirect>
         

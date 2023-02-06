@@ -14,7 +14,6 @@ export const Text = styled.div`
 export const HomeRedirect = styled.div`
   font-size: 30px;
   padding: 2rem;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

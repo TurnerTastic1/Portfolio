@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/index.jsx";
 
 // Page imports
 import Home from "./pages/home.jsx";
+import Projects from "./pages/projects.jsx";
 import NotFound from "./pages/404.jsx";
 
 const AppContainer = styled.div`
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
