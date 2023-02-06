@@ -1,7 +1,9 @@
 import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 
+import Expansion from "../components/motion/expansion/index.jsx";
 
 import { AnimatedTitle } from "../components/motion/AnimatedTitle.jsx";
 import { motion } from "framer-motion"
@@ -11,7 +13,7 @@ const Main = styled.section`
 `;
 
 const About = styled.section`
-  
+  padding-bottom: 20px;
 `;
 
 const SubBox = styled.div`
@@ -29,6 +31,7 @@ display: flex;
 `
 
 const Text = styled.div`
+color: #fff;
 font-size: calc(1em + 1.5vw);
 padding: 2rem;
 cursor: pointer;
@@ -49,40 +52,43 @@ export function ChangeTitle() {
     document.title = "Turner Naef - About";
   } else if (location.pathname === "/projects") {
     document.title = "Turner Naef - Projects";
-  } else if (location.pathname === "/social") {
-    document.title = "Turner Naef - Social";
+  } else if (location.pathname === "/connect") {
+    document.title = "Turner Naef - Connect";
   } else {
     document.title = "Turner Naef";
   }
 }
 
+
+
 function Home() {
+  const [isOpen, setIsOpen] = useState(false);
   ChangeTitle();
   // console.log("Home!");
   return (
     <div>
       <Main id="home">
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ rotate: 360, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20
+            delay: 0.5,
+            x: { duration: 1 },
+            default: { ease: "linear" }
           }}
         >
           <SubBox>
             <Text>
-              <h1>Hello there,</h1>
-              <h2>My name is Turner</h2>
+              <h1>h1 test,</h1>
+              <h2>h2 test</h2>
             </Text>
           </SubBox>
           
         </motion.div>
         
-        
+        <Expansion/>
       </Main>
-
+          
       <About id="about">
         <motion.div
           initial={{ scale: 0 }}
@@ -108,3 +114,17 @@ function Home() {
 }
 
 export default Home;
+
+/*
+
+<motion.div
+          layout
+          data-isOpen={isOpen}
+          initial={{ borderRadius: 50 }}
+          className="parent"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <motion.div layout className="child" />
+        </motion.div>
+
+*/
