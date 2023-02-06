@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 
 import Expansion from "../components/motion/expansion/index.jsx";
 
-import { AnimatedTitle } from "../components/motion/AnimatedTitle.jsx";
 import { motion } from "framer-motion"
 
 const Main = styled.section`
@@ -62,7 +60,6 @@ export function ChangeTitle() {
 
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
   ChangeTitle();
   // console.log("Home!");
   return (
