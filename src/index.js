@@ -4,24 +4,11 @@ import "./index.css";
 import App from "./App.jsx";
 import reportWebVitals from "./reportWebVitals";
 
-import styled from "styled-components";
-
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background: #111;
-  postion: fixed;
-`;
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppContainer>
-      <App />
-    </AppContainer>
-    
+    <App />
   </React.StrictMode>
-  
 );
 
 // If you want to start measuring performance in your app, pass a function

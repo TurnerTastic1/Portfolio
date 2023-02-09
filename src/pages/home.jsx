@@ -6,8 +6,11 @@ import Expansion from "../components/motion/expansion/index.jsx";
 
 import { motion } from "framer-motion"
 
+import ParticlesComponent from "../components/particles/stars.jsx";
+
 const Main = styled.section`
   padding-bottom: 100%;
+  padding-top: 100px;
 `;
 
 const About = styled.section`
