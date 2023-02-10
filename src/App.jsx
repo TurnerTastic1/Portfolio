@@ -25,7 +25,7 @@ function App() {
   // const is404 = !paths.includes(window.hash);
   return (
     <AppContainer>
-      <Nav />
+      <Navbar />
       <ParticlesComponent />
       <Router>
         <Routes>

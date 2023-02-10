@@ -1,20 +1,23 @@
 .parent {
-    background: rgb(143, 42, 130);
+    background: rgba(93, 220, 225, 0.5);
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   
 .parent[data-isOpen="true"] {
   width: 400px;
   height: 200px;
+  
 }
 
   .child {
-    width: 40px;
-    height: 40px;
-    background: #f107a3;
+    width: 30px;
+    height: 30px;
+    background: #071bcf;
     border-radius: 50%;
+    z-index: 1;
   }

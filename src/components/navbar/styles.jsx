@@ -36,7 +36,6 @@ export const Link = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
-  
   &:hover {
     color: #00BFFF;
     border-top: 1px solid #00BFFF;
