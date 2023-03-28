@@ -36,8 +36,8 @@ function Navbar() {
       <LeftSection>
         <HomeRedirect>
           <Emphasis
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <HomeRLink href="/home">TN</HomeRLink>
           </Emphasis>
@@ -47,24 +47,24 @@ function Navbar() {
       <RightSection>
         <Text>
           <Emphasis
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
-            <Link href="/#about">About</Link>
+            <Link href="/about">About</Link>
           </Emphasis>
         </Text>
         <Text>
           <Emphasis
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <Link href="/projects">Projects</Link>
           </Emphasis>
         </Text>
         <Text>
           <Emphasis
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <Link href="/connect">Connect</Link>
           </Emphasis>
