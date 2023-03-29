@@ -15,6 +15,7 @@ const Box = styled.div`
   z-index: 0;
 `;
 
+// eslint-disable-next-line no-unused-vars
 const ParticlesComponent = (props) => {
 // This is new implementation where I have used react-tsparticles instead of react-particles-js
   const particlesInit = async (main) => {

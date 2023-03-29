@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import Home from "../components/home.jsx";
 import About from "../components/about.jsx";
