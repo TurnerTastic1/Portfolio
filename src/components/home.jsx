@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 import img from "../assets/img/homeIMG.png";
 
-// background-size:cover;
-// position:relative;
-
 const PageContainer = styled.section`
 	width: 100%;
 	height: 100%;
@@ -29,14 +26,13 @@ const RightSection = styled.div`
 const Text = styled.div`
 	flex: 50%
 	text-align: center;
-	color: #fff;
+	color: #21c6db;
 	font-size: calc(1em + 1.5vw);
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	&>*:last-child{
-			color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
 			font-size: calc(0.5rem + 1.5vw);
 			font-weight:300;
 	}
