@@ -1,16 +1,76 @@
 import React from "react";
-// get styled components
+import styled from "styled-components";
 
-// Comment for testing linter for a new branch
+// Importing custom components
+import { 
+  Text, 
+  HomeRedirect,
+  HomeRLink,
+  Link,
+  Emphasis
+} from "./styles.jsx";
+
+const NavbarContainer = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px #fff;
+  background: rgb(f, f, f);
+`;
+
+const LeftSection = styled.div`
+  display: flex;
+`;
+
+const RightSection = styled.div`
+  display: flex;
+  flex: 2;
+  justify-content: right;
+  padding-right: 50px;
+`;
 
 function Navbar() {
   return (
-    <nav>
-      <div>
-        <p>This is the navbar!</p>
-        <p>New changes!</p>
-      </div>
-    </nav>
+    <NavbarContainer>
+      <LeftSection>
+        <HomeRedirect>
+          <Emphasis
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <HomeRLink href="/home">TN</HomeRLink>
+          </Emphasis>
+        </HomeRedirect>
+        
+      </LeftSection>
+      <RightSection>
+        <Text>
+          <Emphasis
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link href="/about">About</Link>
+          </Emphasis>
+        </Text>
+        <Text>
+          <Emphasis
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link href="/projects">Projects</Link>
+          </Emphasis>
+        </Text>
+        <Text>
+          <Emphasis
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link href="/connect">Connect</Link>
+          </Emphasis>
+        </Text>
+      </RightSection>
+    </NavbarContainer>
   )
 }
 
