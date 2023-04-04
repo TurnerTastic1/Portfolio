@@ -5,13 +5,13 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   width: 100wh;
   height: 100vh;
-  background: #111;
+  background: #fff;
 `;
 
 const HeaderItem = styled.h1`
     height: 20vh;
     padding: 0 1.1em;
-    color: #fff;
+    color: #4682B4;
     font-weight: 500;
     
     align-items: center;

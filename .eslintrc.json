@@ -11,7 +11,8 @@
         "indent": ["warn", 2],
         "linebreak-style": 1,
         "quotes": ["error", "double"],
-        "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+        "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "react/no-unescaped-entities": "off"
     },
     "parserOptions": {
         "ecmaVersion": 2021,
